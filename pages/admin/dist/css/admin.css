@@ -1,0 +1,302 @@
+.wrapper .content-wrapper{
+  background: #362f1f;
+}
+.wrapper .inscription-main{
+  background-image: url("../img/Inscripcion-fondo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.wrapper .configuration-main{
+  background-image: url("../img/Configuracion-fondo.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.wrapper .help-main{
+  background-image: url("../img/help.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.inscription-container .inscription-title,
+.configuration-container .configuration-title,
+.reports-container .reports-title{
+  color: #ffffff;
+  text-align: center;
+}
+.inscription-container .inscription-select{
+  margin: 1rem 0;
+}
+.inscription-container .btn-content-inscription,
+.configuration-container .box-footer{
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.options-popup.hide{
+  display: none;
+}
+.inscription-container .btn-content-inscription .btn-inscription,
+.configuration-container .box-footer .btn-change,
+.options-popup .btn-accept {
+  width: 100%;
+  font-weight: 700;
+  color: #ffffff;
+  background: #c7363b;
+  border-color: #c7363b;
+}
+.inscription-container .btn-content-inscription .btn-inscription:hover,
+.configuration-container .box-footer .btn-change:hover,
+.options-popup .btn-accept:hover {
+  background: #c1131e;
+}
+.container-terms-and-conditions{
+  color: #ffffff;
+  font-weight: 700;
+}
+.container-terms-and-conditions .terms-and-conditions{
+  color: #c7363b;
+}
+.main-sidebar{
+  background: #f7f7f7;
+}
+.mt-2 .nav-item a{
+  color: #000;
+}
+#nav-admin .nav-item.menu-open a:hover {
+  color: #c7363b;
+}
+.login-logo{
+  margin: 1rem 0;
+}
+.user-panel{
+  margin-top: 0 !important;
+}
+.sidebar .email{
+  color: #000;
+}
+.configuration-container .configuration label,
+.registered-league{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+}
+.inscription-container .inscription-search,
+.configuration-container .configuration-content,
+.reports-container .reports-content,
+.help-container .help-content,
+.manage-users-container .manage-users-content{
+    max-width: 600px;
+    padding: 20px 80px;
+    margin: 0 auto;
+}
+.email-container .email-content{
+  padding: 20px;
+  color: #ffffff;
+}
+.email-container .email-content .head-email{
+  display: flex;
+}
+.email-container .affair-content{
+  display: flex;
+  flex: 50%;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.email-container .all-content{
+  flex: 50%;
+  padding: 0 10px;
+}
+.email-container .all-content .all-ligue-content{
+  display: flex;
+  margin: 10px 0;
+}
+.email-container .all-content .all-ligue-content span{
+  flex: 40%;
+}
+.email-container .email-content .email-body{
+  padding: 20px 10px;
+}
+.email-container .email-content .email-body .email{
+  width: 100%
+}
+.email-container .email-content .email-buttons{
+  display: flex;
+  padding: 10px;
+}
+.email-container .email-content .email-buttons .content-btn-email-buttons{
+  flex: 50%;
+  display: flex;
+}
+.email-container .email-content .email-buttons .content-btn-email-file,
+.email-container .email-content .email-buttons .content-btn-email-send{
+  flex: 50%;
+  display: flex;
+}
+.msg-error{
+  color: #c7363b;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+.msg-terms-and-conditions{
+  color: #ffffff;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: 700;
+  background: #000;
+  letter-spacing: 1.6px;
+  margin: 25px 0;
+}
+/*fadein-popup*/
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+.content-popup {
+    margin:0px auto;
+    margin-top:80px;
+    position:relative;
+    padding:10px;
+    max-width:500px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+.content-popup h2 {
+    font-size: 1.8rem;
+    color:#48484B;
+    border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 4px;
+}
+.popup-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.close {
+    line-height: 1.5;
+}
+.reports-table-container{
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.content-btn-reports{
+  display: flex;
+}
+.content-btn-reports-search,
+.content-btn-reports-generate{
+  flex: 1;
+}
+.content-btn-reports-search button,
+.content-btn-reports-generate button,
+.content-btn-email-send button{
+  border-radius: 8px;
+  background: #c7363b;
+  padding: 5px;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+}
+.email-container .email-content .email-buttons .content-btn-email-send{
+  display: flex;
+  justify-content: flex-end;
+  flex: 50%;
+}
+.content-btn-email-send button{
+  max-width: 200px;
+  max-height: 44px;
+}
+.content-btn-reports .btn-reports-search:hover,
+.content-btn-reports .btn-reports-generate:hover,
+.content-btn-email-send .btn-email-send:hover{
+  color: #ffffff;
+  background: #c1131e;
+}
+#nav-admin .nav-item.menu-open a{
+  background-color: transparent;
+  color: #000;
+}
+.inputfile {
+    display: none
+}
+.inputfile + label {
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+.inputfile-quote + label span {
+    width: 300px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    min-height: 44px;
+    border: 1px solid #c7363b;
+    margin: 0 20px 10px 0;
+    padding: 5px;
+}
+.inputfile-quote + label strong {
+    padding: 10px;
+    background-color: #c7363b;
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 150px;
+    text-align: center;
+}
+.modal-incription .lol,
+.modal-incription .valorant,
+.modal-incription .smash,
+.modal-incription .default{
+  display: none;
+}
+.modal-incription .lol.show,
+.modal-incription .valorant.show,
+.modal-incription .smash.show,
+.modal-incription .default.show{
+  display: block;
+  text-align: justify;
+}
+.help-container{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+.help-container .help-content-info{
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+.registered-league-content{
+  margin: 50px 0 0;
+}
+.registered-league p{
+  color: #c7363b;
+  font-weight: 700;
+  font-size: 20px;
+}
+.registered-league i{
+  padding: 0 5px;
+}
+@media (max-width: 767px){
+.inscription-container .inscription-search,
+.configuration-container .configuration-content{
+    padding: 20px;
+  }
+  .inputfile-quote + label span{
+    width: 150px;
+  }
+}

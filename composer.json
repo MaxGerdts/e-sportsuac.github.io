@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dolejska-daniel/riot-api": "^4",
+        "phpmailer/phpmailer": "^6.1"
+    }
+}

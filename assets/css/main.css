@@ -1,0 +1,314 @@
+/* home */
+.masthead .btn-us{
+  background-color: #c7363b;
+}
+.masthead .btn-us:hover{
+  background-color: #c1131e;
+}
+.masthead .divider-red,
+#services .divider-red,
+#contact .divider-red{
+  border-color: #c7363b;
+}
+.icon-fightings{
+  background-image: url("../img/icons/icon-figthing.png");
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+}
+.icon-shooters{
+  background-image: url("../img/icons/icon-shooter.png");
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+}
+.icon-mobas{
+  background-image: url("../img/icons/icon-moba.png");
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+}
+.row{
+  justify-content: center;
+}
+.bg-welcome{
+  background-color: #c7363b !important;
+}
+.row .contact-info > a{
+  color: #c7363b;
+}
+
+/* login y signin*/
+
+.form-login .content-btn-form-login,
+.form-signin .content-btn-form-sign,
+.form-recover-password .content-btn-form-recover-password,
+.ranking-search .content-btn-ranking-search{
+  border-radius: 8px;
+  background: #c7363b;
+  padding: 5px;
+}
+.form-login .content-btn-form-login .btn-form-login,
+.form-signin .content-btn-form-sign .btn-form-sign,
+.form-recover-password .content-btn-form-recover-password .btn-form-recover-password,
+.ranking-search .content-btn-ranking-search .btn-ranking-search{
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+}
+.form-login .content-btn-form-login .btn-form-login:hover,
+.form-signin .content-btn-form-sign .btn-form-sign:hover,
+.ranking-search .content-btn-ranking-search .btn-ranking-search:hover{
+  background: #c1131e;
+}
+.form-login .content-btn-form-login .btn-form-login:focus,
+.form-signin .content-btn-form-sign .btn-form-sign:focus,
+.ranking-search .content-btn-ranking-search .btn-ranking-search:focus{
+  box-shadow: none;
+}
+.form-login .forgot-password,
+.form-recover-password .recover-password{
+  text-align: center;
+  margin: 20px 0px;
+}
+.form-login .forgot-password a,
+.form-recover-password .recover-password a{
+  color: #999999;
+  text-decoration: none;
+}
+.form-login-sign-in,
+.form-sign-login-in{
+  color: #999999;
+  text-align: center;
+  margin: 20px 0px 0px;
+}
+.form-login-sign-in a,
+.form-sign-login-in a{
+  color: #c7363b;
+  font-weight: 700;
+}
+.form-login-sign-in a:hover,
+.form-sign-login-in a:hover{
+  color: #c1131e;
+  font-weight: 700;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #ebebeb;
+}
+.form-container #login-content,
+.form-container #signin-content,
+.form-container #recover-password-content,
+.ranking-container .ranking-content{
+  width: 100%;
+}
+#login-content .form-login,
+#signin-content .form-signin,
+#recover-password-content .form-recover-password{
+  background: #ffffff;
+  padding: 30px 0px;
+  border-radius: 8px;
+}
+.form-login .title-login,
+.form-signin .title-sign,
+.form-recover-password .title-recover-password{
+  margin: 10px 0px;
+}
+.form-group{
+  margin: 20px 0px;
+}
+.form-group input,
+.form-group select{
+  min-height: 50px;
+  color: #6b7685;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-color: #c7363b;
+}
+.input-email,
+.input-id-number,
+.input-pwd-confirm{
+  position: relative;
+}
+.input-email.icon-valid::before,
+.input-id-number.icon-valid::before,
+.input-pwd-confirm.icon-valid::before{
+  content: "";
+  display: block;
+  background-image: url("../img/icons/valid-icon.svg");
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}
+/*
+cambiar place holder
+input[type="email"]::placeholder {
+    color: blue;
+}
+*/
+.msg-error{
+  color: #c7363b;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+.ranking-container,
+.faq-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-top: 72px;
+}
+.ranking-container .ranking-search{
+  margin: 0 auto;
+}
+.ranking-content .search{
+  display: flex;
+}
+.ranking-content .search .search-select{
+  margin: 0 5px;
+}
+.ranking-search .content-btn-ranking-search{
+  max-width: 300px;
+  margin: 20px auto;
+}
+.content-ranking-table .ranking-table{
+  color: #ffffff;
+}
+.ranking-container .ranking-title{
+  color: #ffffff;
+  text-align: center;
+}
+.dropdown-item-profile{
+  font-size: 14px;
+  font-weight: 700;
+  background: #c7363b;
+}
+.dropdown-item-profile a{
+  color: #ffffff;
+}
+.ranking-container .ranking-table{
+  padding: 10px 30px;
+}
+.lol-container,
+.valorant-container,
+.smash-container{
+  display: flex;
+  padding: 40px 10px;
+}
+.lol-container .lol-content-game-logo{
+  flex: 30%;
+  background-image: url("../img/portfolio/thumbnails/League_of_legends_logo_transparent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.lol-container .lol-content-info{
+  flex: 50%;
+  color: #fff;
+  text-align: justify;
+  padding: 0 30px;
+}
+.lol-container .lol-content-esportsuac-logo{
+  flex: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+.lol-content-esportsuac-logo img,
+.valorant-content-esportsuac-logo img,
+.smash-content-esportsuac-logo img{
+  width: 100%;
+  padding: 0 20px;
+}
+.valorant-container .valorant-content-game-logo{
+  flex: 30%;
+  background-image: url("../img/portfolio/thumbnails/V_Logotype_Red-1024x576-1024x576.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.valorant-container .valorant-content-info{
+  flex: 50%;
+  color: #fff;
+  text-align: justify;
+  padding: 0 30px;
+}
+.valorant-container .valorant-content-esportsuac-logo{
+  flex: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+.smash-container .smash-content-game-logo{
+  flex: 30%;
+  background-image: url("../img/portfolio/thumbnails/640px-Super_Smash_Bros._Ultimate_logo.svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.smash-container .smash-content-info{
+  flex: 50%;
+  color: #fff;
+  text-align: justify;
+  padding: 0 30px;
+}
+.smash-container .smash-content-esportsuac-logo{
+  flex: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+.faq-container .faq-content-game-logo{
+  flex: 30%;
+  /*background-image: url("../img/portfolio/thumbnails/640px-Super_Smash_Bros._Ultimate_logo.svg.png");*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.faq-container .faq-content-info{
+  flex: 50%;
+  color: #fff;
+  text-align: justify;
+  padding: 0 30px;
+}
+.faq-container .faq-content-esportsuac-logo{
+  flex: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+/* Medias Query */
+@media (min-width: 768px){
+  #login-content .form-login,
+  #recover-password-content .form-recover-password{
+    max-width: 600px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  #signin-content .form-signin{
+    max-width: 700px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .ranking-container .ranking-search{
+    max-width: 700px;
+  }
+}
+@media (max-width:767px){
+  #login-content .form-login,
+  #signin-content .form-signin,
+  #recover-password-content .form-recover-password,
+  .ranking-container .ranking-search{
+    max-width: none;
+    padding:  20px;
+  }
+}
