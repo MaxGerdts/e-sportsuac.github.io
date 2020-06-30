@@ -7,8 +7,8 @@
 }*/
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-require '../vendor/autoload.php';
-include '../riot.php';
+require __DIR__ . '/../vendor/autoload.php';
+include __DIR__ . '/../riot.php';
 class userClass
 {
   public function randomPassword(){
