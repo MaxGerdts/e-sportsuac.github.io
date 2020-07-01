@@ -127,7 +127,7 @@ function exportTableToExcel(tableID, filename = ''){
 
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper reports-main">
     <!-- Main content -->
       <div class="reports-container">
           <div class="reports-content">
@@ -175,7 +175,7 @@ function exportTableToExcel(tableID, filename = ''){
                   </select>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="codigo-est" placeholder="Codigo" name="codigo-est"> <br>
+                <input type="text" class="form-control" id="codigo-est" placeholder="Codigo" name="codigo-est">
               </div>
               <div class="content-btn-reports">
                 <div class="content-btn-reports-search">

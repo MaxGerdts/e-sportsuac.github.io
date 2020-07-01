@@ -101,23 +101,23 @@ if (isset($_POST['nueva_contraseña']) && isset($_POST['repite_contraseña']) &&
   <div class="content-wrapper configuration-main">
     <!-- Main content -->
     <div class="configuration-container">
-        <div class="configuration-content">
+        <div class="configuration-content-password">
           <div class="configuration-title">
-            <h2>Configuración</h2>
+            <h2>Cambiar contraseña</h2>
           </div>
           <div class="form-group configuration">
             <form role="form" method="post">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Ingresar contraseña actual</label>
-                  <input name="vieja_password" type="password" class="form-control" id="vieja_password" placeholder="Ingresar contraseña actual">
+                  <input name="vieja_password" type="password" class="form-control" id="vieja_password" placeholder="Contraseña actual">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Ingresar nueva contraseña</label>
-                  <input name="nueva_contraseña" type="password" class="form-control" id="nueva_contraseña" placeholder="Ingresar nueva contraseña">
+                  <input name="nueva_contraseña" type="password" class="form-control" id="nueva_contraseña" placeholder="Nueva contraseña">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Confirmar nueva contraseña</label>
-                  <input name="repite_contraseña" type="password" class="form-control" id="repite_contraseña" placeholder="Repite nueva contraseña">
+                  <input name="repite_contraseña" type="password" class="form-control" id="repite_contraseña" placeholder="Repetir nueva contraseña">
                 </div>
                 <div class="box-footer">
                   <button type="submit" class="btn btn-primary btn-change">Cambiar</button>
@@ -129,18 +129,20 @@ if (isset($_POST['nueva_contraseña']) && isset($_POST['repite_contraseña']) &&
                 </div>
             </form>
           </div>
+        </div>
+        <div class="configuration-content-ligue">
           <div class="registered-league-content">
             <div class="configuration-title">
-              <h2>Ligas</h2>
+              <h2>Detalles de la liga</h2>
             </div>
             <div class="registered-league">
-              <span>Actualmente te encuentras inscrito en:</span>
+              <span>Actualmente te encuentras inscrito en la liga de:</span>
               <p><?php echo $thisLiga; ?></p>
               <span>Si deseas cambiar de liga dirigete a Ayuda <i class="nav-icon fas fa-info"></i></span>
             </div>
           </div>
         </div>
-     </div>
+    </div>
   </div>
   <!-- /.content-wrapper -->
 

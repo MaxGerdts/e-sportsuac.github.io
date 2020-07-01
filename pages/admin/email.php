@@ -140,7 +140,7 @@ if (isset($_POST['topic']) && isset($_POST['body'])) {
 
   <!-- Content Wrapper. Contains page content -->
   <form action="email.php" method="post" enctype="multipart/form-data">
-  <div class="content-wrapper">
+  <div class="content-wrapper email-main">
     <!-- Main content -->
       <div class="email-container">
         <div class="email-content">

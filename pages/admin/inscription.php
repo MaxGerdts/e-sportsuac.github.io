@@ -148,7 +148,7 @@ if ($option) {
                 <div class="msg-error">
                   <?php echo $msg; ?>
                 </div>
-                
+
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -182,7 +182,7 @@ if ($option) {
                           2. Si perteneces a un grupo, equipo o clan de Super Smash Bros. te pedimos que agregues las respectivas siglas antes de tu nombre, ejemplo: Team Solo Mid representa a sus integrantes por las siglas TSM. (TSM Tweek, TSM Doublelift, etc)
                         </p>
                         <p class="default">
-                          Escoge una liga primero
+                          Seleccione una liga.
                         </p>
                       </div>
                       <div class="modal-footer options-popup" >
