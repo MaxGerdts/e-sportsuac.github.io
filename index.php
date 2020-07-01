@@ -107,7 +107,7 @@ if (isset($_SESSION['autorizado'])) {
       </div>
     </div>
   </section>
-  <section class="page-section" id="services">
+  <section class="page-section bg-ligues" id="services">
     <div class="container">
       <h2 class="text-center mt-0">Conoce nuestras ligas</h2>
       <hr class="divider my-4 divider-red">

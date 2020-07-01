@@ -37,6 +37,9 @@
 .bg-welcome{
   background-color: #c7363b !important;
 }
+.bg-ligues{
+  background-color: #f7f7f7 !important;
+}
 .row .contact-info > a{
   color: #c7363b;
 }
