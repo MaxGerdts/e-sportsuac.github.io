@@ -16,7 +16,7 @@ if (isset($_SESSION['autorizado'])) {
     $href = "login.php";
     $color = "";
   }else{
-    $href = "#";
+    $href = "admin/inscription.php";
     $email = $_SESSION['user'];
     $var_user = $email;
     $color = "";
