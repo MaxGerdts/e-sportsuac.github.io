@@ -49,6 +49,7 @@
 .form-login .content-btn-form-login,
 .form-signin .content-btn-form-sign,
 .form-recover-password .content-btn-form-recover-password,
+.form-code .content-btn-form-code,
 .ranking-search .content-btn-ranking-search{
   border-radius: 8px;
   background: #c7363b;
@@ -57,6 +58,7 @@
 .form-login .content-btn-form-login .btn-form-login,
 .form-signin .content-btn-form-sign .btn-form-sign,
 .form-recover-password .content-btn-form-recover-password .btn-form-recover-password,
+.form-code .content-btn-form-code .btn-form-code,
 .ranking-search .content-btn-ranking-search .btn-ranking-search{
   width: 100%;
   color: #ffffff;
@@ -109,19 +111,22 @@
 .form-container #login-content,
 .form-container #signin-content,
 .form-container #recover-password-content,
+.form-container #code-content,
 .ranking-container .ranking-content{
   width: 100%;
 }
 #login-content .form-login,
 #signin-content .form-signin,
-#recover-password-content .form-recover-password{
+#recover-password-content .form-recover-password,
+#code-content .form-code{
   background: #ffffff;
   padding: 30px 0px;
   border-radius: 8px;
 }
 .form-login .title-login,
 .form-signin .title-sign,
-.form-recover-password .title-recover-password{
+.form-recover-password .title-recover-password,
+.form-code .title-code{
   margin: 10px 0px;
 }
 .form-group{
@@ -290,7 +295,8 @@ input[type="email"]::placeholder {
 /* Medias Query */
 @media (min-width: 768px){
   #login-content .form-login,
-  #recover-password-content .form-recover-password{
+  #recover-password-content .form-recover-password,
+  #code-content .form-code{
     max-width: 600px;
     padding-left: 85px;
     padding-right: 85px;
@@ -310,6 +316,7 @@ input[type="email"]::placeholder {
   #login-content .form-login,
   #signin-content .form-signin,
   #recover-password-content .form-recover-password,
+  #code-content .form-code,
   .ranking-container .ranking-search{
     max-width: none;
     padding:  20px;

@@ -26,22 +26,22 @@ if (isset($_POST['code'])) {
  ?>
 <body>
   <div class="form-container">
-    <div id="login-content">
-      <div class="container form-login">
-        <h2 class="title-login">Digita tu código</h2>
+    <div id="code-content">
+      <div class="container form-code">
+        <h2 class="title-code">Digita tu código</h2>
         <form action="code.php" method="post">
           <div class="form-group">
             <input type="text" class="form-control" id="code" placeholder="Código" name="code" required>
           </div>
-          <div class="content-btn-form-login">
-            <button type="submit" class="btn btn-default btn-form-login">Enviar</button>
+          <div class="content-btn-form-code">
+            <button type="submit" class="btn btn-default btn-form-code">Enviar</button>
           </div>
           <div class="msg-error">
             <?php echo $msg; ?>
           </div>
           <div class="">
-            Se ha enviado un correo con un código de confirmación,
-            Si no has recibido nada has click aquí para reenviar el codigo
+            <span>Se ha enviado un código de confirmación a tu correo</span>
+
           </div>
         </form>
       </div>

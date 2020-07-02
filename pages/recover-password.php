@@ -18,9 +18,9 @@ if (isset($_POST['email'])) {
         $uid2=$userClass->changeToRandomPassword($randomPassword, $email);
         $uid3=$userClass->sendEmailRandomPassword($email,$randomPassword);
         $email = "";
-        $msg="Correo enviado correctamente, reivsa tu bandeja de entrada y sigue los pasos";
+        $msg="Correo enviado correctamente, revisa tu bandeja de entrada y sigue los pasos.";
       }else{
-        $msg.="Correo incorrecto o correo aun no activado, verifique la dirección de e-mail";
+        $msg.="Correo incorrecto o correo aun no activado, verifique la dirección de e-mail.";
       }
     }
 }
