@@ -151,7 +151,7 @@ if (isset($_SESSION['autorizado'])) {
         </div>
         <div class="col-lg-4 col-sm-6">
             <a class="" href="pages/super-smash-bros.php">
-            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Super-Smash.png" alt="Super Smash Bro">
+            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Super-Smash.jpg" alt="Super Smash Bro">
           </a>
         </div>
       </div>
