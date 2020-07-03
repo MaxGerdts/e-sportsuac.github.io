@@ -292,6 +292,12 @@ input[type="email"]::placeholder {
   display: flex;
   align-items: flex-end;
 }
+#code-content .form-code .info-code .not-wanted{
+  font-size: 14px;
+  color: #c7363b;
+  font-weight: 700;
+  font-style: italic;
+}
 /* Medias Query */
 @media (min-width: 768px){
   #login-content .form-login,
