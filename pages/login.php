@@ -42,8 +42,9 @@ if (isset($_POST['email']) && isset($_POST['pwd'])) {
               $_SESSION['tipo'] = $uid3;
               echo '<meta http-equiv="refresh" content="1; url=../index.php">';
             }else{
+              $uid3=$userClass->sendEmail($email);
               $_SESSION['email'] = $email;
-              $msg.='Usuario aun no verificado,has echo <a href="code.php">has click aquí ahora</a> para verificar tu usuario con el código que enviamos a tu correo';
+              $msg.='Tu cuenta no ha sido verificada, te hemos enviando un código de confirmación a tu correo electrónico. <a href="code.php">Has click aquí</a> para ingresar el código.';
             }
         } else {
             $msg.="Nombre de usuario o contraseña incorrecta";
