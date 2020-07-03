@@ -86,7 +86,7 @@ function exportTableToExcel(tableID, filename = ''){
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>Admin E-Sports UAC</title>
-  <link rel="icon" type="image/png" href="imagenes/logo.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="dist/img/logo-uac.png">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">

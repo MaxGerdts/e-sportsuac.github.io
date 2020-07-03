@@ -52,9 +52,13 @@ if (isset($_SESSION['tipo'])) {
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
         <li class="nav-item">
-          <a href="#" class="header">
+            <p>Menú</p>
+        </li>
+        <li class="nav-item menu-open">
+          <a href="../../index.php" class="nav-link">
+            <i class="nav-icon fas fa-home"></i>
             <p>
-              Menú
+              Inicio
             </p>
           </a>
         </li>

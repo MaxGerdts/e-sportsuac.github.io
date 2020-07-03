@@ -7,7 +7,7 @@
   background-position: center;
 }
 .wrapper .configuration-main{
-  background-image: url("../img/Configuracion-fondo.jpeg");
+  background-image: url("../img/Configuracion-fondo.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -116,6 +116,7 @@
 .configuration-container .configuration-content-password,
 .registered-league-content{
   border: 1px solid #ffffff;
+  border-radius: 4px;
 }
 .form-group.configuration,
 .registered-league-content{
@@ -172,7 +173,10 @@
   font-weight: 700;
   background: #000;
   letter-spacing: 1.6px;
-  margin: 25px 0;
+  margin: 20px 0;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 4px;
 }
 /*fadein-popup*/
 #popup {

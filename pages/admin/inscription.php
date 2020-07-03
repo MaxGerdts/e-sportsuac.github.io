@@ -44,7 +44,7 @@ if ($option) {
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>Admin E-Sports UAC</title>
-  <link rel="icon" type="image/png" href="imagenes/logo.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="dist/img/logo-uac.png">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -136,9 +136,9 @@ if ($option) {
                   Te recomendamos leer detenidamente los términos y condiciones, son diferentes para cada liga y cualquier incumplimiento a
                   nuestras normas de suplantación o robo de identidad llevará a sanciones proporcionales.
                 </div>
-                <div class="form-check form-group container-terms-and-conditions">
+                <div class="form-check form-group container-terms-and-conditions" data-toggle="modal" data-target="#exampleModalCenter">
                   <input class="form-check-input check-terms-and-conditions" type="checkbox" id="terms-and-conditions" required>
-                  <label class="form-check-label" data-toggle="modal" data-target="#exampleModalCenter" for="terms-and-conditions">
+                  <label class="form-check-label"  for="terms-and-conditions">
                     Acepto <span class="terms-and-conditions">términos y condiciones </span>
                   </label>
               </div>
