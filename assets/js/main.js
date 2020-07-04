@@ -51,12 +51,14 @@ function validateIdentification(){
 }validateIdentification();
 
 function validPass(){
+  if ($('#pwd').val().length != 0) {
     if(document.querySelector('#pwd-confirm') != null){
         var numInput = document.querySelector('#pwd-confirm');
         var pwd = document.querySelector('#pwd');
         numInput.value == pwd.value
           ? (numInput.parentElement.classList.add('icon-valid'))
           : (numInput.parentElement.classList.remove('icon-valid'));
+    }
     }
 }
 function validatePass(){

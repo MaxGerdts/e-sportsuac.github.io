@@ -38,36 +38,40 @@ if (isset($_POST['email']) && isset($_POST['pwd']) && isset($_POST['pwd-confirm'
     $codigo = strip_tags($_POST['codigo-est']);
     $password = strip_tags($_POST['pwd']);
     $repite_password = strip_tags($_POST['pwd-confirm']);
-
-    if (strcmp($password, $repite_password) !==0) {
-        $msg.="Las claves no coinciden <br>";
-    } elseif (strlen($password) < 8) {
-        $msg.="La contraseña debe ser mayor a 8 carácteres <br>";
-    } else {
-        $uid=$userClass->userRegistration($nombre, $apellido, $tipo_id, $identificacion, $email, $password, $codigo);
-        if ($uid) {
-            $uid2=$userClass->sendEmail($email);
-            $_SESSION['correo'] = $email;
-            $msg.="Usuario creado correctamente, redirigiendo";
-            echo '<meta http-equiv="refresh" content="2; url=code.php">';
-        } else {
-            $msg.="Usuario ya existe";
-        }
+    $firstEmailCheck = "@uac.edu.co";
+    $secondEmailCheck = "@uautonoma.edu.co";
+    if (strpos($email,$firstEmailCheck)!==false || strpos($email,$secondEmailCheck)!==false) {
+      if (strcmp($password, $repite_password) !==0) {
+          $msg.="Las claves no coinciden <br>";
+      } elseif (strlen($password) < 8) {
+          $msg.="La contraseña debe ser mayor a 8 carácteres <br>";
+      } else {
+          $uid=$userClass->userRegistration($nombre, $apellido, $tipo_id, $identificacion, $email, $password, $codigo);
+          if ($uid) {
+              $uid2=$userClass->sendEmail($email);
+              $_SESSION['correo'] = $email;
+              $msg.="Usuario creado correctamente, redirigiendo";
+              echo '<meta http-equiv="refresh" content="2; url=code.php">';
+          } else {
+              $msg.="Usuario ya existe";
+          }
+      }
+  }
+    }else{
+      $msg.="Sólo puedes inscribirte con correos institucionales tipo @uac.edu.co / @uautonoma.edu.co";
     }
-}
+
  ?>
   <body>
     <div class="form-container">
       <div id="signin-content">
         <div class="container form-signin">
           <h2 class="title-sign">Registrarse</h2>
-          <form action="signin.php" method="post">
+          <form action="signin.php" method="post" class="form-signin-content">
             <div class="form-group">
-              <div class="msg-error"><?php //echo $msgNombre;?></div>
               <input type="text" class="form-control" id="name" placeholder="Nombres" name="name" maxlength="50" required >
             </div>
             <div class="form-group">
-              <div class="msg-error"><?php //echo $msgApellidos;?></div>
               <input type="text" class="form-control" id="lastname" placeholder="Apellidos" name="lastname" maxlength="50" required>
             </div>
             <div class="form-group">
@@ -78,23 +82,19 @@ if (isset($_POST['email']) && isset($_POST['pwd']) && isset($_POST['pwd-confirm'
               </select>
             </div>
             <div class="form-group input-id-number">
-              <div class="msg-error"><?php //echo $msgNombre;?></div>
               <input type="text" class="form-control" id="id-number" placeholder="Número de identificación" name="id-number" required>
             </div>
             <div class="form-group input-id-number">
-              <div class="msg-error"><?php //echo $msgNombre;?></div>
               <input type="text" class="form-control" id="codigo-est" placeholder="Código de estudiante" name="codigo-est" required>
             </div>
             <div class="form-group input-email">
-              <div class="msg-error"><?php //echo $msgEmail;?></div>
               <input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email" maxlength="50" required>
+              <p class="email-info">Recuerda registrarte con tu correo @uac.edu.co ó @uautonoma.edu.co</p>
             </div>
             <div class="form-group">
-              <div class="msg-error"><?php //echo $msgPWD;?></div>
               <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pwd" maxlength="20" required>
             </div>
             <div class="form-group input-pwd-confirm">
-              <div class="msg-error"><?php //echo $msgRPWD;?></div>
               <input type="password" class="form-control" id="pwd-confirm" placeholder="Confirmar contraseña" name="pwd-confirm" maxlength="20" required>
             </div>
             <div class="content-btn-form-sign">
