@@ -312,7 +312,7 @@ input[type="email"]::placeholder {
 }
 .form-signin-content .content-btn-form-sign{
   max-width: 420px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .form-signin-content .input-email .email-info{
   font-size: 14px;
