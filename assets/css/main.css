@@ -132,6 +132,9 @@
 .form-group{
   margin: 10px 0px;
 }
+#login-content .form-group{
+  margin: 20px 0px;
+}
 .form-group input,
 .form-group select{
   min-height: 50px;
