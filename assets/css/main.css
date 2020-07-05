@@ -355,3 +355,24 @@ input[type="email"]::placeholder {
     padding:  20px;
   }
 }
+@media (max-width:1279px){
+  .lol-container,
+  .valorant-container,
+  .smash-container{
+    flex-direction: column;
+  }
+  .lol-content-esportsuac-logo img,
+  .valorant-content-esportsuac-logo img,
+  .smash-content-esportsuac-logo img{
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .lol-container .lol-content-game-logo,
+  .valorant-container .valorant-content-game-logo,
+  .smash-container .smash-content-game-logo{
+    flex: none;
+    height: 150px;
+    background-position: center;
+  }
+
+}

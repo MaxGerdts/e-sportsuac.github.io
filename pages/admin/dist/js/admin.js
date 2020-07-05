@@ -1,7 +1,6 @@
 // pop up terms and conditions
 $(document).ready(function(){
     $('#terms-and-conditions').on('click', function(){
-        $('#popup').fadeIn('slow');
         if ($(".inscription-select").val() == "League of legends"){
           $(".modal-incription .lol").addClass("show");
           $(".modal-incription .smash").removeClass("show");
@@ -33,11 +32,12 @@ $(document).ready(function(){
         if (!$('#terms-and-conditions').prop("checked")) {
           $('#terms-and-conditions').prop('checked',true);
         }
-        $('#popup').fadeOut('slow');
-        $('.popup-overlay').fadeOut('slow');
     });
     $('.inscription-select').on('click', function() {
         $('#terms-and-conditions').prop('checked',false);
+    });
+    $('#terms-and-conditions').on('click',function(){
+      $('.container-terms-and-conditions').click();
     });
 });
 'use strict';
