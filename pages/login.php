@@ -47,7 +47,7 @@ if (isset($_POST['email']) && isset($_POST['pwd'])) {
               $msg.='Tu cuenta no ha sido verificada, te hemos enviando un código de confirmación a tu correo electrónico. <a href="code.php">Has click aquí</a> para ingresar el código.';
             }
         } else {
-            $msg.="Nombre de usuario o contraseña incorrecta";
+            $msg.="Nombre de usuario o contraseña incorrecta.";
             $_SESSION['autorizado'] = false;
         }
     }

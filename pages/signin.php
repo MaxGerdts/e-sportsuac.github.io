@@ -40,12 +40,11 @@ if (isset($_POST['email']) && isset($_POST['pwd']) && isset($_POST['pwd-confirm'
     $repite_password = strip_tags($_POST['pwd-confirm']);
     $firstEmailCheck = "@uac.edu.co";
     $secondEmailCheck = "@uautonoma.edu.co";
-    if (strpos($email,$firstEmailCheck)!==false || strpos($email,$secondEmailCheck)!==false) {
       if (strcmp($password, $repite_password) !==0) {
-          $msg.="Las claves no coinciden <br>";
+          $msg.="Las contraseñas no coinciden.";
       } elseif (strlen($password) < 8) {
-          $msg.="La contraseña debe ser mayor a 8 carácteres <br>";
-      } else {
+          $msg.="La contraseña debe ser mayor a 8 carácteres.";
+      } elseif (strpos($email,$firstEmailCheck)!==false || strpos($email,$secondEmailCheck)!==false)  {
           $uid=$userClass->userRegistration($nombre, $apellido, $tipo_id, $identificacion, $email, $password, $codigo);
           if ($uid) {
               $uid2=$userClass->sendEmail($email);
@@ -53,12 +52,11 @@ if (isset($_POST['email']) && isset($_POST['pwd']) && isset($_POST['pwd-confirm'
               $msg.="Usuario creado correctamente, redirigiendo";
               echo '<meta http-equiv="refresh" content="2; url=code.php">';
           } else {
-              $msg.="Usuario ya existe";
+              $msg.="Ese correo electrónico ya está en uso.";
           }
+      }else{
+        $msg.="Sólo puedes inscribirte con correos institucionales tipo @uac.edu.co / @uautonoma.edu.co";
       }
-  }
-    }else{
-      $msg.="Sólo puedes inscribirte con correos institucionales tipo @uac.edu.co / @uautonoma.edu.co";
     }
 
  ?>
@@ -67,6 +65,9 @@ if (isset($_POST['email']) && isset($_POST['pwd']) && isset($_POST['pwd-confirm'
       <div id="signin-content">
         <div class="container form-signin">
           <h2 class="title-sign">Registrarse</h2>
+          <div class="msg-error">
+              <?php echo $msg; ?>
+          </div>
           <form action="signin.php" method="post" class="form-signin-content">
             <div class="form-group">
               <input type="text" class="form-control" id="name" placeholder="Nombres" name="name" maxlength="50" required >
@@ -103,9 +104,6 @@ if (isset($_POST['email']) && isset($_POST['pwd']) && isset($_POST['pwd-confirm'
             <div class="form-sign-login-in">
               <label>¿Ya tienes cuenta?</label>
               <a href="login.php">Inicia sesión ahora</a>
-            </div>
-            <div style="color:red">
-                <?php echo $msg; ?>
             </div>
           </form>
         </div>
