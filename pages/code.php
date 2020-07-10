@@ -30,7 +30,7 @@ if (isset($_POST['code'])) {
       <div class="container form-code">
         <h2 class="title-code">Confirmar correo electrónico</h2>
         <div class="info-code">
-          <span>El registro de tu cuenta se ha compleado con éxito, te invitamos a revisar tu correo electrónico se ha enviado un código de confirmación.</span>
+          <span>Tu cuenta está registrada en nuestra plataforma, para finalizar se ha enviado un código de confirmación a tu correo electrónico.</span>
           <p class="not-wanted">Es posible que debas revisar la sección de correos no deseados.</p>
         </div>
         <form action="code.php" method="post">

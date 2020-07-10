@@ -175,7 +175,7 @@ function exportTableToExcel(tableID, filename = ''){
                   </select>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="codigo-est" placeholder="Codigo" name="codigo-est">
+                <input type="text" class="form-control" id="codigo-est" placeholder="Código" name="codigo-est">
               </div>
               <div class="content-btn-reports">
                 <div class="content-btn-reports-search">
@@ -194,9 +194,9 @@ function exportTableToExcel(tableID, filename = ''){
                   <tr>
                     <th>Nombre</th>
                     <th>Apellidos</th>
-                    <th>Tipo de indentificacion</th>
-                    <th>No. de indentificacion</th>
-                    <th>Codigo</th>
+                    <th>Tipo de indentificación</th>
+                    <th>No. de indentificación</th>
+                    <th>Código</th>
                     <th>Correo</th>
                     <th>Liga</th>
                     <th>Tag / Nickname</th>

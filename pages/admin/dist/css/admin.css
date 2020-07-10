@@ -18,7 +18,7 @@
 }
 .wrapper .reports-main{
   background-image: url("../img/reports.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 .wrapper .email-main{
