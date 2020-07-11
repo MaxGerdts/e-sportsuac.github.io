@@ -1,35 +1,10 @@
 .wrapper .content-wrapper{
-  background: #000;
-}
-.wrapper .inscription-main{
-  background-image: url("../img/Inscripcion-fondo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.wrapper .configuration-main{
-  background-image: url("../img/Configuracion-fondo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.wrapper .help-main{
-  background-image: url("../img/help.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.wrapper .reports-main{
-  background-image: url("../img/reports.jpg");
-  background-size: contain;
-  background-position: center;
-}
-.wrapper .email-main{
-  background-image: url("../img/email.jpg");
-  background-size: cover;
-  background-position: bottom;
+  background: #ebebeb;
 }
 .inscription-container .inscription-title,
 .configuration-container .configuration-title,
 .reports-container .reports-title{
-  color: #ffffff;
+  color: #7d8b95;
   text-align: center;
 }
 .inscription-container .inscription-select{
@@ -59,14 +34,14 @@
   background: #c1131e;
 }
 .container-terms-and-conditions{
-  color: #ffffff;
+  color: #7d8b95;
   font-weight: 700;
 }
 .container-terms-and-conditions .terms-and-conditions{
   color: #c7363b;
 }
 .main-sidebar{
-  background: #f7f7f7;
+  background: #ffffff;
 }
 .mt-2 .nav-item a{
   color: #000;
@@ -77,17 +52,25 @@
 .login-logo{
   margin: 1rem 0;
 }
-.user-panel{
-  margin-top: 0 !important;
+.wrapper .sidebar .user-panel{
+  background: #ebebeb;
+  border-bottom: none;
+  border-radius: 16px;
+  padding: 5px !important;
 }
 .sidebar .email{
   color: #000;
 }
 .configuration-container .configuration label,
 .registered-league{
-  color: #ffffff;
+  color: #45515f;
   font-weight: 500;
   font-size: 18px;
+}
+.inscription-container .inscription-search,
+.reports-container .reports-content{
+  background: #ffffff;
+  border-radius: 8px;
 }
 .inscription-container .inscription-search,
 .reports-container .reports-content,
@@ -99,28 +82,32 @@
 }
 .email-container .email-content{
   padding: 20px;
-  color: #ffffff;
+  color: #45515f;
 }
 .email-container .email-content .head-email{
   display: flex;
 }
-.configuration-container{
+.configuration-container,
+.inscription-container{
   display: flex;
   padding: 20px;
 }
+.reports-container{
+  padding: 20px 0;
+}
 .configuration-container .configuration-content-password,
 .configuration-container .configuration-content-ligue{
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
   flex: 1;
+  margin: 0 10px;
+}
+.form-group.configuration{
   padding: 0 20px;
 }
-.configuration-container .configuration-content-password,
 .registered-league-content{
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-}
-.form-group.configuration,
-.registered-league-content{
-  padding: 0 20px;
+  padding: 20px;
 }
 .email-container .affair-content{
   display: flex;
@@ -167,16 +154,16 @@
   font-weight: 700;
 }
 .msg-terms-and-conditions{
-  color: #ffffff;
+  color: #000;
   font-size: 15px;
   text-align: justify;
-  font-weight: 700;
-  background: #000;
-  letter-spacing: 1.6px;
+  font-weight: 400;
+  letter-spacing: 1px;
   margin: 20px 0;
-  border: 1px solid #fff;
+  background: #ebebeb;
+  border-bottom: 5px solid #c7363b;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 /*fadein-popup*/
 #popup {
@@ -217,9 +204,13 @@
 .close {
     line-height: 1.5;
 }
+.reports-table-container .content-reports-table{
+  background: #ffffff;
+  border-radius: 8px;
+}
 .reports-table-container{
-  padding: 10px 20px;
-  color: #ffffff;
+  padding: 20px 10px;
+  color: #45515f;
 }
 .content-btn-reports{
   display: flex;
@@ -256,8 +247,7 @@
   background: #c1131e;
 }
 #nav-admin .nav-item.menu-open a{
-  background-color: transparent;
-  color: #000;
+  color: #45515f;
 }
 .inputfile {
     display: none
@@ -276,9 +266,10 @@
     overflow: hidden;
     vertical-align: top;
     min-height: 40px;
-    border: 1px solid #ffffff;
+    border: 1px solid #c7363b;
     margin-right: 10px;
     padding: 5px;
+    color: #45515f;
 }
 .inputfile-quote + label strong {
     padding: 8px;
@@ -287,6 +278,7 @@
     border-radius: 8px;
     min-width: 150px;
     text-align: center;
+    color: #ffffff;
 }
 .modal-incription .lol,
 .modal-incription .valorant,
@@ -307,9 +299,12 @@
   justify-content: center;
 }
 .help-container .help-content-info{
-  color: #fff;
+  color: #45515f;
   font-size: 18px;
   letter-spacing: 1.5px;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 8px;
 }
 .registered-league p{
   color: #c7363b;
