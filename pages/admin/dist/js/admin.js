@@ -39,6 +39,16 @@ $(document).ready(function(){
     $('#terms-and-conditions').on('click',function(){
       $('.container-terms-and-conditions').click();
     });
+
+    if($('.current-league').text() == "League of legends"){
+      $('.img-current-ligue').addClass('img-lol');
+    }else if ($('.current-league').text() == "Super Smash Bros. Ultimate") {
+      $('.img-current-ligue').addClass('img-smash');
+    }else if ($('.current-league').text() == "Valorant") {
+      $('.img-current-ligue').addClass('img-valorant');
+    }else{
+      console.log("d");
+    }
 });
 'use strict';
 
@@ -53,15 +63,19 @@ $(document).ready(function(){
     input.addEventListener( 'change', function( e )
     {
       var fileName = '';
-      if( this.files && this.files.length > 1 )
-        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-      else
+      if( this.files && this.files.length > 1 ){
+        fileName =  this.files.length + " archivos subidos";
+        }
+      else{
         fileName = e.target.value.split( '\\' ).pop();
-
-      if( fileName )
+        console.log("entr");
+        }
+      if( fileName ){
         label.querySelector( 'span' ).innerHTML = fileName;
-      else
+        }
+      else{
         label.innerHTML = labelVal;
+        }
     });
   });
 }( document, window, 0 ));

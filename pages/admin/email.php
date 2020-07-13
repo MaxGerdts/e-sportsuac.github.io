@@ -174,7 +174,7 @@ if (isset($_POST['topic']) && isset($_POST['body'])) {
             </div>
             <div class="email-buttons">
               <div class="content-btn-email-file">
-                <input type="file" name="file-7" id="file-quote" class="inputfile inputfile-quote" accept=".doc, .docx, .pdf, .xls, .jpg, jpeg, .gif, .png" />
+                <input type="file" name="file-7" id="file-quote" class="inputfile inputfile-quote" multiple accept=".doc, .docx, .pdf, .xls, .jpg, jpeg, .gif, .png" />
                   <label for="file-quote">
                   <span class="file-span"></span>
                   <strong>

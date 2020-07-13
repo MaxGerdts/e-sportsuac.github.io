@@ -4,7 +4,7 @@
 .inscription-container .inscription-title,
 .configuration-container .configuration-title,
 .reports-container .reports-title{
-  color: #7d8b95;
+  color: #45515f;
   text-align: center;
 }
 .inscription-container .inscription-select{
@@ -91,6 +91,8 @@
 .inscription-container{
   display: flex;
   padding: 20px;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 .reports-container{
   padding: 20px 0;
@@ -104,7 +106,7 @@
   margin: 0 10px;
 }
 .form-group.configuration{
-  padding: 0 20px;
+  margin-bottom: 0;
 }
 .registered-league-content{
   padding: 20px;
@@ -152,6 +154,7 @@
   font-size: 15px;
   text-align: center;
   font-weight: 700;
+  padding: 10px 0;
 }
 .msg-terms-and-conditions{
   color: #000;
@@ -306,13 +309,39 @@
   padding: 5px;
   border-radius: 8px;
 }
-.registered-league p{
+.registered-league .current-league{
   color: #c7363b;
   font-weight: 700;
   font-size: 20px;
 }
+.registered-league .change-ligue{
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
 .registered-league i{
   padding: 0 5px;
+}
+.img-current-ligue.img-lol{
+  background-image: url("../img/League_of_legends_logo_transparent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+}
+.img-current-ligue.img-smash{
+  background-image: url("../img/640px-Super_Smash_Bros._Ultimate_logo.svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+}
+.img-current-ligue.img-valorant{
+  background-image: url("../img/V_Logotype_Red-1024x576-1024x576.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
 }
 @media (max-width: 767px){
 .inscription-container .inscription-search,
@@ -328,6 +357,6 @@
   .configuration-container .configuration-content-password,
   .configuration-container .configuration-content-ligue{
     margin: 5px 0;
-    padding: 0;
+    padding: 10px;
   }
 }
