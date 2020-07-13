@@ -128,6 +128,7 @@
 .form-recover-password .title-recover-password,
 .form-code .title-code{
   margin: 10px 0px;
+  color: #333;
 }
 .form-group{
   margin: 10px 0px;

@@ -4,7 +4,7 @@
 .inscription-container .inscription-title,
 .configuration-container .configuration-title,
 .reports-container .reports-title{
-  color: #45515f;
+  color: #333;
   text-align: center;
 }
 .inscription-container .inscription-select{
@@ -63,7 +63,7 @@
 }
 .configuration-container .configuration label,
 .registered-league{
-  color: #45515f;
+  color: #333;
   font-weight: 500;
   font-size: 18px;
 }
@@ -82,7 +82,7 @@
 }
 .email-container .email-content{
   padding: 20px;
-  color: #45515f;
+  color: #333;
 }
 .email-container .email-content .head-email{
   display: flex;
@@ -165,7 +165,7 @@
   margin: 20px 0;
   background: #ebebeb;
   border-bottom: 5px solid #c7363b;
-  padding: 5px;
+  padding: 10px;
   border-radius: 8px;
 }
 /*fadein-popup*/
@@ -213,7 +213,7 @@
 }
 .reports-table-container{
   padding: 20px 10px;
-  color: #45515f;
+  color: #333;
 }
 .content-btn-reports{
   display: flex;
@@ -250,7 +250,7 @@
   background: #c1131e;
 }
 #nav-admin .nav-item.menu-open a{
-  color: #45515f;
+  color: #333;
 }
 .inputfile {
     display: none
@@ -272,7 +272,7 @@
     border: 1px solid #c7363b;
     margin-right: 10px;
     padding: 5px;
-    color: #45515f;
+    color: #333;
 }
 .inputfile-quote + label strong {
     padding: 8px;
@@ -302,7 +302,7 @@
   justify-content: center;
 }
 .help-container .help-content-info{
-  color: #45515f;
+  color: #333;
   font-size: 18px;
   letter-spacing: 1.5px;
   background: #ffffff;
@@ -342,6 +342,10 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 150px;
+}
+.form-control:focus{
+  box-shadow: none;
+  border-color: #c7363b;
 }
 @media (max-width: 767px){
 .inscription-container .inscription-search,
