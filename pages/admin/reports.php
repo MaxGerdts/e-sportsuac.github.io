@@ -137,7 +137,7 @@ function exportTableToExcel(tableID, filename = ''){
             <form class="" action="reports.php" method="post">
               <div class="form-group">
                 <select class="form-control inscription-select" name="liga-select" id="liga-select">
-                  <option hidden selected value="">Seleccione una liga</option>
+                  <option hidden selected value="">Seleccione un club</option>
                   <?php
                    $ligas = $userClass->getLigas();
                    foreach ($ligas as $row) {
@@ -206,7 +206,7 @@ function exportTableToExcel(tableID, filename = ''){
                     <th>No. de indentificación</th>
                     <th>Código</th>
                     <th>Correo</th>
-                    <th>Liga</th>
+                    <th>Club</th>
                     <th>Tag / Nickname</th>
                     <th>Programa</th>
                   </tr>

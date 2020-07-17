@@ -132,15 +132,15 @@ if (isset($_POST['nueva_contraseña']) && isset($_POST['repite_contraseña']) &&
         </div>
         <div class="configuration-content-ligue">
             <div class="configuration-title">
-              <h2>Detalles de la liga</h2>
+              <h2>Detalles del club</h2>
             </div>
             <div class="registered-league">
-              <span>Actualmente te encuentras inscrito en la liga de:</span>
+              <span>Actualmente te encuentras inscrito en el club de:</span>
               <p class="current-league"><?php echo $thisLiga; ?></p>
               <div class="img-current-ligue">
 
               </div>
-              <p class="change-ligue">Si deseas cambiar de liga dirigete a Ayuda <i class="nav-icon fas fa-info"></i></p>
+              <p class="change-ligue">Si deseas cambiar de club dirigete a Ayuda <i class="nav-icon fas fa-info"></i></p>
             </div>
         </div>
     </div>

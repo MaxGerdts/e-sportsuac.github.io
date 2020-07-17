@@ -151,9 +151,9 @@ if (isset($_POST['topic']) && isset($_POST['body'])) {
               </div>
               <div class="all-content">
                 <div class="all-ligue-content">
-                  <span>Liga</span>
+                  <span>Club</span>
                   <select class="form-control inscription-select" name="liga" id="liga" >
-                    <option hidden selected value="">Seleccione una liga</option>
+                    <option hidden selected value="">Seleccione un club</option>
                     <?php
                      $ligas = $userClass->getLigas();
                      foreach ($ligas as $row) {

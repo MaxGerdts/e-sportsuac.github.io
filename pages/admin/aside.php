@@ -35,7 +35,7 @@ if (isset($_SESSION['tipo'])) {
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
   <div class="login-logo">
-    <img src="dist/img/logo.png" alt="">
+    <img src="dist/img/logo-uac.png" alt="">
   </div>
   <!-- Sidebar -->
   <div class="sidebar">
@@ -66,7 +66,7 @@ if (isset($_SESSION['tipo'])) {
           <a href="inscription.php" class="nav-link">
             <i class="nav-icon far fa-edit"></i>
             <p>
-              Inscripción a una liga
+              Inscripción a un club
             </p>
           </a>
         </li>

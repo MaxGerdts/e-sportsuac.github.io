@@ -30,7 +30,7 @@ if ($option) {
   if ($uid == true) {
     $msg = "Inscripción realizada";
   }else{
-    $msg = "Error en la inscripción, o ya te encuentras inscrito en esta liga, recuerda que sólo puedes estar inscrito en una liga al mismo tiempo.
+    $msg = "Error en la inscripción, o ya te encuentras inscrito en este club, recuerda que sólo puedes estar inscrito en un club al mismo tiempo.
     Si cometiste un error en la inscripción de los datos por favor comunicate con los organizadores de E-Sports UAC en AYUDA";
   }
 }
@@ -90,7 +90,7 @@ if ($option) {
       <div class="inscription-container">
           <div class="inscription-search">
             <div class="inscription-title">
-              <h2>Inscribete a una liga</h2>
+              <h2>Inscribete a un club</h2>
             </div>
             <div class="form-group inscription">
               <form action="inscription.php" method="post">
@@ -120,7 +120,7 @@ if ($option) {
                   <option>Tecnologia en Gestion Portuaria</option>
                 </select>
                 <select class="form-control inscription-select" name="liga" id="liga" required>
-                  <option hidden selected value="">Seleccione una liga</option>
+                  <option hidden selected value="">Seleccione un club</option>
                   <?php
                    $ligas = $userClass->getLigas();
                    foreach ($ligas as $row) {
@@ -133,7 +133,7 @@ if ($option) {
                   <input type="text" class="form-control" id="user-name" placeholder="Tag / Nickname" name="user-name" required>
                 </div>
                 <div class="msg-terms-and-conditions">
-                  Te recomendamos leer detenidamente los términos y condiciones, son diferentes para cada liga y cualquier incumplimiento a
+                  Te recomendamos leer detenidamente los términos y condiciones, son diferentes para cada club y cualquier incumplimiento a
                   nuestras normas de suplantación o robo de identidad llevará a sanciones proporcionales.
                 </div>
                 <div class="form-check form-group container-terms-and-conditions" data-toggle="modal" data-target="#exampleModalCenter">
@@ -161,28 +161,55 @@ if ($option) {
                       </div>
                       <div class="modal-body modal-incription">
                         <p class="lol">
-                          <span>LEAGUE OF LEGENDS</span>
-                          - Riot Games le ha concedido a la Universidad Autonoma del Caribe el uso de sus aplicaciones para la región LAN (Latin America North) por lo cual te pedimos encarecidamente:
-                          1. Usar tu nombre de invocador propio, cualquier tipo de personificación, tercerización de cuentas o falsificación de identidad, que pueda ser verificada será sancionada según lo expuesto por las leyes
-                          más los términos y condiciones propios de Riot Games, que pueden llevar a suspensiones de la cuenta e incluso bloqueo permanente.
-                          2. Sólo puedes inscribirte con una cuenta, si posees más de una cuenta de League of Legends te recomendamos que elijas bien ya que revertir este paso sólo alentara tu proceso.
+                          LEAGUE OF LEGENDS - Riot Games le ha concedido a la Universidad Autonoma del Caribe el uso de sus aplicaciones
+                          para la región LAN (Latin America North) por lo cual te pedimos encarecidamente:
                         </p>
+                        <ul class="lol">
+                          <li>
+                            1. Usar tu nombre de invocador propio, cualquier tipo de personificación, tercerización de cuentas
+                            o falsificación de identidad, que pueda ser verificada será sancionada según lo expuesto por las leyes
+                            más los términos y condiciones propios de Riot Games, que pueden llevar a suspensiones de la cuenta e
+                            incluso bloqueo permanente.
+                          </li>
+                          <li>
+                            2. Sólo puedes inscribirte con una cuenta, si posees más de una cuenta de League of Legends te recomendamos
+                            que elijas bien ya que revertir este paso sólo alentara tu proceso.
+                          </li>
+                        </ul>
                         <p class="valorant">
-                          <span>VALORANT</span>
-                          - Riot Games le ha concedido a la Universidad Autonoma del Caribe el uso de sus aplicaciones para la región LAN (Latin America North) por lo cual te pedimos encarecidamente:
-                          1. Usar tu nombre de invocador propio, cualquier tipo de personificación, tercerización de cuentas o falsificación de identidad, que pueda ser verificada será sancionada según lo expuesto por las leyes
-                          más los términos y condiciones propios de Riot Games, que pueden llevar a suspensiones de la cuenta e incluso bloqueo permanente.
-                          2. Sólo puedes inscribirte con una cuenta, si posees más de una cuenta de Valorant te recomendamos que elijas bien ya que revertir este paso sólo alentara tu proceso.
+                          VALORANT - Riot Games le ha concedido a la Universidad Autonoma del Caribe el uso de sus aplicaciones
+                          para la región LAN (Latin America North) por lo cual te pedimos encarecidamente:
                         </p>
+                        <ul class="valorant">
+                          <li>
+                            1. Usar tu nombre de invocador propio, cualquier tipo de personificación, tercerización de cuentas o
+                            falsificación de identidad, que pueda ser verificada será sancionada según lo expuesto por las leyes
+                            más los términos y condiciones propios de Riot Games, que pueden llevar a suspensiones de la cuenta e
+                            incluso bloqueo permanente.
+                          </li>
+                          <li>
+                            2. Sólo puedes inscribirte con una cuenta, si posees más de una cuenta de Valorant te recomendamos
+                            que elijas bien ya que revertir este paso sólo alentara tu proceso.
+                          </li>
+                        </ul>
                         <p class="smash">
-                          <span>SUPER SMASH BROS. ULTIMATE</span>
-                          - La comunidad de Super Smash Bros. Ultimate de Colombia y más respectivamente de Barranquilla, apoyan el crecimiento de la comunidad de Super Smash Bros. Ultimate, por lo cual te pedimos encarecidamente:
-                          1. Usar tu tag/nickname propio, cualquier tipo de personificación, tercerización de cuentas o falsificación de identidad, que pueda ser verificada será sancionada por la comunidad, por lo cual puede llevar a
-                          evitar tu participación en los torneos locales y nacionales.
-                          2. Si perteneces a un grupo, equipo o clan de Super Smash Bros. te pedimos que agregues las respectivas siglas antes de tu nombre, ejemplo: Team Solo Mid representa a sus integrantes por las siglas TSM. (TSM Tweek, TSM Doublelift, etc)
+                          SUPER SMASH BROS. ULTIMATE - La comunidad de Super Smash Bros. Ultimate de Colombia y más respectivamente
+                          de Barranquilla, apoyan el crecimiento de la comunidad de Super Smash Bros. Ultimate, por lo cual te
+                          pedimos encarecidamente:
                         </p>
+                        <ul class="smash">
+                          <li>
+                            1. Usar tu tag/nickname propio, cualquier tipo de personificación, tercerización de cuentas o falsificación
+                            de identidad, que pueda ser verificada será sancionada por la comunidad, por lo cual puede llevar a
+                            evitar tu participación en los torneos locales y nacionales.</li>
+                          <li>
+                            2. Si perteneces a un grupo, equipo o clan de Super Smash Bros. te pedimos que agregues las respectivas
+                            siglas antes de tu nombre, ejemplo: Team Solo Mid representa a sus integrantes por las siglas TSM.
+                            (TSM Tweek, TSM Doublelift, etc)
+                          </li>
+                        </ul>
                         <p class="default">
-                          Seleccione una liga.
+                          Seleccione un club.
                         </p>
                       </div>
                       <div class="modal-footer options-popup" >
