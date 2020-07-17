@@ -175,6 +175,14 @@ function exportTableToExcel(tableID, filename = ''){
                   </select>
               </div>
               <div class="form-group">
+                <select class="form-control" id="type-user" name="type-user" required>
+                  <option hidden selected value="">Seleccione un tipo de usuario</option>
+                  <option value="estudiante">Estudiante</option>
+                  <option value="egresado">Egresado</option>
+                  <option value="administrativo">Administrativo</option>
+                </select>
+              </div>
+              <div class="form-group">
                 <input type="text" class="form-control" id="codigo-est" placeholder="Código" name="codigo-est">
               </div>
               <div class="content-btn-reports">

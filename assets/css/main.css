@@ -310,6 +310,7 @@ input[type="email"]::placeholder {
   flex: 50%;
   padding: 0 5px;
 }
+.form-signin-content .form-group.input-email,
 .form-signin-content .content-btn-form-sign,
 .form-sign-login-in{
   flex: 100%;
@@ -324,6 +325,7 @@ input[type="email"]::placeholder {
   font-weight: 700;
   font-style: italic;
   margin: 0;
+  padding-top: 10px;
   text-align: justify;
 }
 /* Medias Query */

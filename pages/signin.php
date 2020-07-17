@@ -85,8 +85,16 @@ if (isset($_POST['email']) && isset($_POST['pwd']) && isset($_POST['pwd-confirm'
             <div class="form-group input-id-number">
               <input type="text" class="form-control" id="id-number" placeholder="Número de identificación" name="id-number" required>
             </div>
+            <div class="form-group">
+              <select class="form-control" id="type-user" name="type-user" required>
+                <option hidden selected value="">Seleccione un tipo de usuario</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="egresado">Egresado</option>
+                <option value="administrativo">Administrativo</option>
+              </select>
+            </div>
             <div class="form-group input-id-number">
-              <input type="text" class="form-control" id="codigo-est" placeholder="Código de estudiante" name="codigo-est" required>
+              <input type="text" class="form-control" id="codigo-est" placeholder="Código" name="codigo-est" required>
             </div>
             <div class="form-group input-email">
               <input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email" maxlength="50" required>

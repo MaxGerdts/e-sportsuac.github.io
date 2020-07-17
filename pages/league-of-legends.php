@@ -32,7 +32,7 @@ if (isset($_SESSION['autorizado'])) {
             <a class="nav-link js-scroll-trigger nav-red" href="../index.php#about">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#services">Ligas</a>
+            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#services">Clubes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-red" href="../index.php#contact">Contacto</a>

@@ -52,7 +52,7 @@ if (isset($_SESSION['autorizado'])) {
             <a class="nav-link js-scroll-trigger nav-red" href="#about">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="#services">Ligas</a>
+            <a class="nav-link js-scroll-trigger nav-red" href="#services">Clubes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-red" href="#contact">Contacto</a>
@@ -109,28 +109,28 @@ if (isset($_SESSION['autorizado'])) {
   </section>
   <section class="page-section bg-ligues" id="services">
     <div class="container">
-      <h2 class="text-center mt-0">Conoce nuestras ligas</h2>
+      <h2 class="text-center mt-0">Conoce nuestros clubes</h2>
       <hr class="divider my-4 divider-red">
       <div class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
-            <div class="icon-fightings"></div>
-            <h3 class="h4 mb-2">Fighting Games</h3>
-            <p class="text-muted mb-0">Liga de Fighting Games</p>
+            <div class="icon-mobas"></div>
+            <h3 class="h4 mb-2">Mobas</h3>
+            <p class="text-muted mb-0">Clubes de Mobas</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
             <div class="icon-shooters"></div>
             <h3 class="h4 mb-2">Shooters</h3>
-            <p class="text-muted mb-0">Liga de Shooters.</p>
+            <p class="text-muted mb-0">Clubes de Shooters.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
-            <div class="icon-mobas"></div>
-            <h3 class="h4 mb-2">Mobas</h3>
-            <p class="text-muted mb-0">Liga de Mobas</p>
+            <div class="icon-fightings"></div>
+            <h3 class="h4 mb-2">Fighting Games</h3>
+            <p class="text-muted mb-0">Clubes de Fighting Games</p>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@ if (isset($_SESSION['autorizado'])) {
   </section>
   <section class="page-section bg-dark text-white">
     <div class="container text-center">
-      <h2 class="mb-4">¿Deseas hacer parte de nuestras ligas?</h2>
+      <h2 class="mb-4">¿Deseas hacer parte de nuestros clubes?</h2>
       <a class="btn btn-light btn-xl" href="pages/signin.php">¡Registrate aquí!</a>
     </div>
   </section>
@@ -169,7 +169,7 @@ if (isset($_SESSION['autorizado'])) {
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">¡Contactanos!</h2>
           <hr class="divider my-4 divider-red">
-          <p class="text-muted mb-5">¿Tienes dudas o inquietudes sobre la liga de deportes electrónicos de la Universidad Autónoma del Caribe?</p>
+          <p class="text-muted mb-5">¿Tienes dudas o inquietudes sobre los clubes de deportes electrónicos de la Universidad Autónoma del Caribe?</p>
         </div>
       </div>
       <div class="row">

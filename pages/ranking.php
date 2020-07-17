@@ -59,7 +59,7 @@ if (isset($_POST['programa-select'])) {
             <a class="nav-link js-scroll-trigger nav-red" href="../index.php#about">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#services">Ligas</a>
+            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#services">Clubes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-red" href="../index.php#contact">Contacto</a>
@@ -99,7 +99,7 @@ if (isset($_POST['programa-select'])) {
             </div>
             <div class="form-group search">
               <select class="form-control search-select" name="liga-select" id="liga-select">
-                <option hidden selected>Seleccione una liga</option>
+                <option hidden selected>Seleccione un club</option>
                 <?php
                  $ligas = $userClass->getLigas();
                  foreach ($ligas as $row) {
@@ -144,7 +144,7 @@ if (isset($_POST['programa-select'])) {
                 <tr>
                   <th>Nombre</th>
                   <th>Apellidos</th>
-                  <th>Liga</th>
+                  <th>Club</th>
                   <th>Tag / Nickname</th>
                   <th>Nivel / Rango</th>
                   <th>Programa</th>
