@@ -1,6 +1,7 @@
 /* home */
 .masthead .btn-us{
   background-color: #c7363b;
+  color:  #fff;
 }
 .masthead .btn-us:hover{
   background-color: #c1131e;
@@ -45,105 +46,83 @@
 }
 
 /* login y signin*/
-
-.form-login .content-btn-form-login,
-.form-signin .content-btn-form-sign,
-.form-recover-password .content-btn-form-recover-password,
-.form-code .content-btn-form-code,
-.ranking-search .content-btn-ranking-search{
-  border-radius: 8px;
-  background: #c7363b;
-  padding: 5px;
-}
-.form-login .content-btn-form-login .btn-form-login,
-.form-signin .content-btn-form-sign .btn-form-sign,
-.form-recover-password .content-btn-form-recover-password .btn-form-recover-password,
-.form-code .content-btn-form-code .btn-form-code,
-.ranking-search .content-btn-ranking-search .btn-ranking-search{
-  width: 100%;
-  color: #ffffff;
-  font-weight: 700;
-}
-.form-login .content-btn-form-login .btn-form-login:hover,
-.form-signin .content-btn-form-sign .btn-form-sign:hover,
-.ranking-search .content-btn-ranking-search .btn-ranking-search:hover{
-  background: #c1131e;
-}
-.form-login .content-btn-form-login .btn-form-login:focus,
-.form-signin .content-btn-form-sign .btn-form-sign:focus,
-.ranking-search .content-btn-ranking-search .btn-ranking-search:focus{
-  box-shadow: none;
-}
-.form-login .forgot-password,
-.form-recover-password .recover-password{
-  text-align: center;
-  margin: 20px 0px;
-}
-.form-login .forgot-password a,
-.form-recover-password .recover-password a{
-  color: #999999;
-  text-decoration: none;
-}
-.form-login-sign-in,
-.form-sign-login-in{
-  color: #999999;
-  text-align: center;
-  margin: 20px 0px 0px;
-}
-.form-login-sign-in a,
-.form-sign-login-in a{
-  color: #c7363b;
-  font-weight: 700;
-}
-.form-login-sign-in a:hover,
-.form-sign-login-in a:hover{
-  color: #c1131e;
-  font-weight: 700;
-}
-.form-container{
+.mg-0{margin: 0;}
+.container-primary{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   min-height: 100vh;
   background: #ebebeb;
 }
-.form-container #login-content,
-.form-container #signin-content,
-.form-container #recover-password-content,
-.form-container #code-content,
-.ranking-container .ranking-content{
-  width: 100%;
-}
-#login-content .form-login,
-#signin-content .form-signin,
-#recover-password-content .form-recover-password,
-#code-content .form-code{
-  background: #ffffff;
-  padding: 30px 0px;
+.content-primary{
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
   border-radius: 8px;
 }
-.form-login .title-login,
-.form-signin .title-sign,
-.form-recover-password .title-recover-password,
-.form-code .title-code{
-  margin: 10px 0px;
-  color: #333;
+.content-secondary{
+  flex: 1;
+  max-width: 600px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
 }
-.form-group{
-  margin: 10px 0px;
+.btn-primary{
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  min-height: 44px;
+  background: #c7363b;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 8px;
+  transition: 0.7s;
 }
-#login-content .form-group{
-  margin: 20px 0px;
+.btn-primary:hover{
+  background: #ffffff;
+  color: #c7363b;
+  text-decoration: none;
+  box-shadow: 2px 3px 7px #000;
 }
-.form-group input,
-.form-group select{
-  min-height: 50px;
+.input-primary{
+  background: transparent;
+  color: #6b7685;
+  border: none;
+  border-bottom: 1px solid #c7363b;
+  outline: none;
+  padding: 10px 0;
+  margin: 0 0 30px;
+}
+.input-primary::placeholder{
   color: #6b7685;
 }
-.form-control:focus{
-  box-shadow: none;
-  border-color: #c7363b;
+.font-primary{
+  color: #c7363b;
+}
+.font-secondary{
+  color: #6b7685;
+}
+.link{
+  color: #c7363b;
+  font-weight: 700;
+}
+.link:hover{
+  color: #c7363b;
+  text-decoration: none;
+  opacity: 0.8;
+}
+input,
+select{
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  margin: 5px auto;
 }
 .input-email,
 .input-id-number,
@@ -162,12 +141,6 @@
   top: 17px;
   right: 20px;
 }
-/*
-cambiar place holder
-input[type="email"]::placeholder {
-    color: blue;
-}
-*/
 .msg-error{
   color: #c7363b;
   font-size: 15px;
@@ -296,7 +269,7 @@ input[type="email"]::placeholder {
   display: flex;
   align-items: flex-end;
 }
-#code-content .form-code .info-code .not-wanted{
+.not-wanted{
   font-size: 14px;
   color: #c7363b;
   font-weight: 700;
@@ -309,28 +282,25 @@ input[type="email"]::placeholder {
 .form-signin-content .form-group{
   flex: 50%;
   padding: 0 5px;
+  margin: 0;
 }
 .form-signin-content .form-group.input-email,
 .form-signin-content .content-btn-form-sign,
 .form-sign-login-in{
   flex: 100%;
 }
-.form-signin-content .content-btn-form-sign{
-  max-width: 420px;
-  margin: 10px auto;
-}
-.form-signin-content .input-email .email-info{
-  font-size: 14px;
-  color: #c7363b;
+.email-info{
+  font-size: 12px;
+  color: #6b7685;
   font-weight: 700;
   font-style: italic;
+  letter-spacing: 1px;
   margin: 0;
   padding-top: 10px;
   text-align: justify;
 }
 /* Medias Query */
 @media (min-width: 768px){
-  #login-content .form-login,
   #recover-password-content .form-recover-password,
   #code-content .form-code{
     max-width: 600px;
@@ -349,7 +319,6 @@ input[type="email"]::placeholder {
   }
 }
 @media (max-width:767px){
-  #login-content .form-login,
   #signin-content .form-signin,
   #recover-password-content .form-recover-password,
   #code-content .form-code,

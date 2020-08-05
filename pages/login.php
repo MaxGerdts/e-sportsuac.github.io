@@ -54,34 +54,28 @@ if (isset($_POST['email']) && isset($_POST['pwd'])) {
 }
 
  ?>
-  <body>
-    <div class="form-container">
-      <div id="login-content">
-        <div class="container form-login">
-          <h2 class="title-login">Iniciar sesión</h2>
-          <div class="msg-error">
-            <?php echo $msg; ?>
-          </div>
-          <form action="login.php" method="post">
-            <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email" required>
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="pwd" placeholder="Contraseña" name="pwd" required>
-            </div>
-            <div class="content-btn-form-login">
-              <button type="submit" class="btn btn-default btn-form-login">Iniciar sesión</button>
-            </div>
-            <div class="forgot-password">
-              <a href="recover-password.php">¿Olvidaste la contraseña?</a>
-            </div>
-            <div class="form-login-sign-in">
-              <label>¿No tienes cuenta?</label>
-              <a href="signin.php">Registraste ahora</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+ <body>
+   <div class="container-primary">
+       <div class="content-primary">
+         <h2 class="text-center">Iniciar sesión</h2>
+         <div class="msg-error">
+           <?php echo $msg; ?>
+         </div>
+         <form action="login.php" method="post">
+           <div class="form-group">
+             <p class="font-primary font-weight-bold mg-0">Correo electrónico</p>
+             <input type="email" class="input-primary" id="email" placeholder="Ingrese correo electrónico" name="email" required>
+             <p class="font-primary font-weight-bold mg-0">Contraseña</p>
+             <input type="password" class="input-primary" id="pwd" placeholder="Ingrese contraseña" name="pwd" required>
+             <button type="submit" class="btn btn-default btn-primary">Iniciar sesión</button>
+           </div>
+           <a href="recover-password.php" class="d-block link text-center">¿Olvidaste la contraseña?</a>
+           <div class="text-center">
+             <span class="font-secondary">¿No tienes cuenta?</span>
+             <a href="signin.php" class="link">Registraste ahora</a>
+           </div>
+         </form>
+     </div>
+   </div>
 </body>
 </html>

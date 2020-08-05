@@ -91,7 +91,7 @@ if (isset($_SESSION['autorizado'])) {
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">¡Bienvenido a E-Sports UAC!</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger btn-us" href="#about">Conoce más sobre nosotros</a>
+          <a class="btn btn-xl js-scroll-trigger btn-us" href="#about">Conoce más sobre nosotros</a>
         </div>
       </div>
     </div>
@@ -155,12 +155,6 @@ if (isset($_SESSION['autorizado'])) {
           </a>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="page-section bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">¿Deseas hacer parte de nuestros clubes?</h2>
-      <a class="btn btn-light btn-xl" href="pages/signin.php">¡Registrate aquí!</a>
     </div>
   </section>
   <section class="page-section" id="contact">

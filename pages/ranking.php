@@ -135,7 +135,7 @@ if (isset($_POST['programa-select'])) {
               </select>
             </div>
             <div class="content-btn-ranking-search">
-              <button type="submit" class="btn btn-default btn-ranking-search">Buscar</button>
+              <button type="submit" class="btn btn-default btn-primary">Buscar</button>
             </div>
           </div>
           <div class="ranking-table">

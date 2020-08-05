@@ -27,29 +27,23 @@ if (isset($_POST['email'])) {
 
  ?>
   <body>
-    <div class="form-container">
-      <div id="recover-password-content">
-        <div class="container form-recover-password">
-          <h2 class="title-recover-password">Recuperar contraseña</h2>
+    <div class="container-primary">
+        <div class="content-primary">
+          <h2 class="text-center">Recuperar contraseña</h2>
           <div class="msg-error">
             <?php echo $msg; ?>
           </div>
-          <div class="">
-            <p>Ingresa tu cuenta de correo electrónico</p>
-          </div>
           <form action="recover-password.php" method="post">
             <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="email" required>
+              <p class="font-primary font-weight-bold mg-0">Correo electrónico</p>
+              <input type="email" class="input-primary" id="email" placeholder="Ingrese correo electrónico" name="email" required>
+              <button type="submit" class="btn btn-default btn-primary">Enviar</button>
             </div>
-            <div class="content-btn-form-recover-password">
-              <button type="submit" class="btn btn-default btn-form-recover-password">Enviar</button>
-            </div>
-            <div class="recover-password">
-              <a href="login.php">Volver al inicio de sesión</a>
+            <div class="text-center">
+              <a href="login.php" class="link">Volver al inicio de sesión</a>
             </div>
           </form>
         </div>
-      </div>
     </div>
 </body>
 </html>
