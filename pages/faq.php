@@ -64,12 +64,15 @@ if (isset($_SESSION['autorizado'])) {
   </nav>
   <header class="masthead">
     <div class="faq-container">
-      <div class="faq-content-game-logo"></div>
       <div class="faq-content-info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-      <div class="faq-content-esportsuac-logo">
-        <img class="img-fluid" src="#" alt="t">
+        <p>¿Que son los deportes electronicos?</p>
+        <span>Son campeonatos de videojuegos (con vertientes online y presencial) en los que jugadores profesionales compiten por premios económicos y prestigio. También se les conoce como esports, pero la Real Academia Española recomienda el uso de la expresión española 'deporte electrónico', al igual que ocurre con el e-commerce o comercio electrónico.</span>
+        <p>¿Pero si es un deporte?</p>
+        <span>¡Claro que si! Los deportistas entienden la importancia de la disciplina, la práctica e incluso el trabajo en equipo, muchas de las cuales también tienen que aplicar los deportistas electrónicos.</span>
+        <p>¿Que beneficios obtengo perteneciendo a E-Sports UAC?</p>
+        <span>La Universidad Autonoma del Caribe busca apoyar a los usuarios interesados en los deportes electronicos, ofreciendo posibles lugares de práctica y recreación, así como beneficiar con posibles becas a los mejores jugadores</span>
+        <p>¿Que tengo que hacer para inscribirme?</p>
+        <span>Sólo necesitas tu correo institucional @uac.edu.co, dar click donde dice REGISTRAR y seguir los pasos ¡Te esperamos!</span>
       </div>
     </div>
   </header>
