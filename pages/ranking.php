@@ -81,8 +81,8 @@ if (isset($_POST['programa-select'])) {
     </div>
   </nav>
   <header class="masthead">
+    <div class="ranking-container">
       <form class="" action="ranking.php" method="post">
-      <div class="ranking-container">
         <div class="ranking-content">
           <div class="ranking-search">
             <div class="ranking-title">
@@ -161,8 +161,8 @@ if (isset($_POST['programa-select'])) {
             </div>
           </div>
         </div>
-      </div>
       </form>
+    </div>
   </header>
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

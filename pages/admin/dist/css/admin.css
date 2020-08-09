@@ -372,3 +372,11 @@
     padding: 10px;
   }
 }
+@media (min-width:992px){
+  .sidebar-mini.sidebar-collapse .main-sidebar{
+    width: 0;
+  }
+  .sidebar-mini.sidebar-collapse .content-wrapper{
+    margin-left: 0 !important;
+  }
+}

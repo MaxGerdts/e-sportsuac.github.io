@@ -168,7 +168,11 @@ select{
   text-align: center;
   font-weight: 700;
 }
-.ranking-container .ranking-search{
+.ranking-container{
+  padding: 40px 20px 0;
+}
+.ranking-search{
+  max-width: 700px;
   margin: 0 auto;
 }
 .ranking-content .search{
@@ -176,10 +180,6 @@ select{
 }
 .ranking-content .search .search-select{
   margin: 0 5px;
-}
-.ranking-search .content-btn-ranking-search{
-  max-width: 300px;
-  margin: 20px auto;
 }
 .content-ranking-table .ranking-table{
   color: #ffffff;
@@ -319,18 +319,6 @@ select{
     padding-right: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  .ranking-container .ranking-search{
-    max-width: 700px;
-  }
-}
-@media (max-width:767px){
-  #signin-content .form-signin,
-  #recover-password-content .form-recover-password,
-  #code-content .form-code,
-  .ranking-container .ranking-search{
-    max-width: none;
-    padding:  20px;
   }
 }
 @media (max-width: 1100px){
