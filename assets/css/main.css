@@ -38,7 +38,8 @@
 .bg-welcome{
   background-color: #c7363b !important;
 }
-.bg-ligues{
+.bg-ligues,
+.bg-games{
   background-color: #f7f7f7 !important;
 }
 .row .contact-info > a{
@@ -133,6 +134,13 @@ select{
   height: 45px;
   padding: 10px;
   margin: 5px auto;
+}
+.carousel-item {
+  max-height: 500px;
+}
+.carousel-item img {
+  object-fit: contain;
+  max-height: 500px;
 }
 .input-email,
 .input-id-number,

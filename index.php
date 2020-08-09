@@ -49,15 +49,6 @@ if (isset($_SESSION['autorizado'])) {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="#about">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="#services">Clubes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="#contact">Contacto</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-red" href="pages/ranking.php">Ranking</a>
           </li>
           <li class="nav-item">
@@ -91,22 +82,11 @@ if (isset($_SESSION['autorizado'])) {
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">¡Bienvenido a E-Sports UAC!</p>
-          <a class="btn btn-xl js-scroll-trigger btn-us" href="#about">Conoce más sobre nosotros</a>
+          <a class="btn btn-xl js-scroll-trigger btn-us" href="#services">Conoce más sobre nosotros</a>
         </div>
       </div>
     </div>
   </header>
-  <section class="page-section bg-primary bg-welcome" id="about">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">Bienvenido al mundo de los deportes electrónicos</h2>
-          <hr class="divider light my-4">
-          <a class="btn btn-light btn-xl js-scroll-trigger btn-empezar" href="#services">Empieza ahora!</a>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="page-section bg-ligues" id="services">
     <div class="container">
       <h2 class="text-center mt-0">Conoce nuestros clubes</h2>
@@ -136,25 +116,38 @@ if (isset($_SESSION['autorizado'])) {
       </div>
     </div>
   </section>
-  <section id="games">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-          <a class="" href="pages/league-of-legends.php">
-            <img class="img-fluid" src="assets/img/portfolio/thumbnails/League-Of-Legends.jpg" alt="League Of Legends">
+  <section class="page-section bg-games" id="games">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="pages/league-of-legends.php">
+            <img src="assets/img/portfolio/thumbnails/League-Of-Legends.jpg" class="d-block w-100" alt="...">
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-            <a class="" href="pages/valorant.php">
-            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Valorant.png" alt="Valorant">
+        <div class="carousel-item">
+          <a href="pages/valorant.php">
+            <img src="assets/img/portfolio/thumbnails/Valorant.png" class="d-block w-100" alt="...">
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-            <a class="" href="pages/super-smash-bros.php">
-            <img class="img-fluid" src="assets/img/portfolio/thumbnails/Super-Smash.jpg" alt="Super Smash Bro">
+        <div class="carousel-item">
+          <a href="pages/super-smash-bros.php">
+            <img src="assets/img/portfolio/thumbnails/Super-Smash.jpg" class="d-block w-100" alt="...">
           </a>
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </section>
   <section class="page-section" id="contact">
