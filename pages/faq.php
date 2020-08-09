@@ -29,15 +29,6 @@ if (isset($_SESSION['autorizado'])) {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#about">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#services">Clubes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#contact">Contacto</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-red" href="ranking.php">Ranking</a>
           </li>
           <li class="nav-item">

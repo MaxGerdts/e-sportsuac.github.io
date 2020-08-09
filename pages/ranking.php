@@ -56,15 +56,6 @@ if (isset($_POST['programa-select'])) {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#about">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#services">Clubes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#contact">Contacto</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-red" href="#">Ranking</a>
           </li>
           <li class="nav-item">

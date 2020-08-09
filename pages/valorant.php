@@ -4,7 +4,7 @@ if (isset($_SESSION['autorizado'])) {
   $autorizado = $_SESSION['autorizado'];
   if ($autorizado == false) {
     $var_user = "Iniciar sesión";
-    $href = "pages/login.php";
+    $href = "login.php";
     $color = "";
   }else{
     $href = "#";
@@ -28,15 +28,6 @@ if (isset($_SESSION['autorizado'])) {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#about">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#services">Clubes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="../index.php#contact">Contacto</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger nav-red" href="ranking.php">Ranking</a>
           </li>
           <li class="nav-item">
@@ -55,7 +46,7 @@ if (isset($_SESSION['autorizado'])) {
             <a class="nav-link js-scroll-trigger nav-red" href=<?php echo $href ?>><?php echo $var_user ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger nav-red" href="pages/signin.php">Registrate</a>
+            <a class="nav-link js-scroll-trigger nav-red" href="signin.php">Registrate</a>
           </li>
         </ul>
       </div>
