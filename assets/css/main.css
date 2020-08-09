@@ -1,4 +1,7 @@
 /* home */
+header.masthead.main{
+  padding-top: 92px;
+}
 .masthead .btn-us{
   background-color: #c7363b;
   color:  #fff;
@@ -165,23 +168,6 @@ select{
   text-align: center;
   font-weight: 700;
 }
-.ranking-container,
-.faq-container{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  padding: 40px 0 10px;
-}
-.faq-container p{
-  font-weight: bold;
-  margin: 10px 0;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 5px;
-}
 .ranking-container .ranking-search{
   margin: 0 auto;
 }
@@ -276,22 +262,18 @@ select{
   display: flex;
   align-items: flex-end;
 }
-.faq-container .faq-content-game-logo{
-  flex: 30%;
-  /*background-image: url("../img/portfolio/thumbnails/640px-Super_Smash_Bros._Ultimate_logo.svg.png");*/
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.faq-container .faq-content-info{
+.faq-content-info{
   max-width: 800px;
   color: #fff;
   text-align: justify;
-  padding: 0;
+  margin: 0 auto;
+  padding: 40px 20px 0;
 }
-.faq-container .faq-content-esportsuac-logo{
-  flex: 20%;
-  display: flex;
-  align-items: flex-end;
+.faq-content-info p{
+  font-weight: bold;
+  margin: 10px 0;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
 }
 .not-wanted{
   font-size: 14px;
@@ -350,6 +332,13 @@ select{
     max-width: none;
     padding:  20px;
   }
+}
+@media (max-width: 1100px){
+  .carousel-control-prev,
+  .carousel-control-next{
+    display: none;
+  }
+
 }
 @media (max-width:1279px){
   .lol-container,

@@ -54,7 +54,6 @@ if (isset($_SESSION['autorizado'])) {
     </div>
   </nav>
   <header class="masthead">
-    <div class="faq-container">
       <div class="faq-content-info">
         <p>¿Que son los deportes electronicos?</p>
         <span>Son campeonatos de videojuegos (con vertientes online y presencial) en los que jugadores profesionales compiten por premios económicos y prestigio. También se les conoce como esports, pero la Real Academia Española recomienda el uso de la expresión española 'deporte electrónico', al igual que ocurre con el e-commerce o comercio electrónico.</span>
@@ -65,7 +64,6 @@ if (isset($_SESSION['autorizado'])) {
         <p>¿Que tengo que hacer para inscribirme?</p>
         <span>Sólo necesitas tu correo institucional @uac.edu.co, dar click donde dice REGISTRAR y seguir los pasos ¡Te esperamos!</span>
       </div>
-    </div>
   </header>
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

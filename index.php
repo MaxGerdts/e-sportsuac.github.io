@@ -73,7 +73,7 @@ if (isset($_SESSION['autorizado'])) {
       </div>
     </div>
   </nav>
-  <header class="masthead">
+  <header class="masthead main">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
